@@ -1,0 +1,26 @@
+package javabth2;
+
+public class Constructor {
+	
+	int id;
+	String name;
+	public Condtructor(int i,String n)
+	{
+		id = i;
+		name=n;
+		
+	}
+	public void display()
+	{
+		System.out.println("The id value is"+id+" "+name);
+	}
+	public static void main(String[] args)
+	{
+		Constructor cp = new Constructor(101,"Kumar");//object creation
+		Constructor cp1 = new Constructor(102,"Ram");//JVM explicily created  aconctr. called condtructor()
+		cp.display();
+		cp1.display();
+	}
+
+}
+
